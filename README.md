@@ -1,21 +1,10 @@
-# Inicio de la tienda — design reference
+# Mamá en Calma — maqueta del sitio
 
-This is a design mockup created in a visual design tool, exported as a
-standalone page. Treat it as a REFERENCE MOCKUP, not production code:
-the markup and inline styles carry the design's precise values — colors,
-font sizes, spacing, radii, shadows, layout — which an implementation
-should replicate faithfully in its own components and styling system
-rather than copy wholesale.
+Maqueta de la tienda online (lactancia, postparto y recién nacido), en tonos crudos.
 
-## Contents
+- `index.html` — página de inicio: kits, productos, tarjetas educativas con QR y sección de la matrona.
+- `personalizar.html` — personalización del kit: nombre, tipo de letra, color, mensaje y firma, con vista previa en vivo.
+- `support.js`, `vendor/` — runtime que dibuja las páginas en el navegador.
 
-- `Main.dc.html` — the artboard (a Design Component: an `<x-dc>`
-  template + a small logic class). The values to replicate live in its
-  inline `style="…"` attributes and the `<helmet><style>` block.
-- `support.js`, `vendor/react*.js` — the runtime that renders the
-  component in a browser; not part of the design.
-
-## Viewing
-
-Serve the folder (e.g. `python3 -m http.server`) and open `Main.dc.html`;
-some browsers block the scripts over file://.
+Es una maqueta de referencia: los precios marcados como [PRECIO] y las fotos están pendientes.
+Para verla en local: `python3 -m http.server` y abrir `http://localhost:8000`.
