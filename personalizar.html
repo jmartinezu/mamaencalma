@@ -83,7 +83,7 @@ a{color:#6B4F38}a:hover{color:#4A3626}
 
       <div style="display: flex; flex-direction: column; gap: 8px;">
         <label for="mensaje" style="font-size: 14px; font-weight: 800;">5. Mensaje para la tarjeta (máx. 90 caracteres)</label>
-        <textarea id="mensaje" maxlength="90" rows="3" onChange="{{onMessage}}" placeholder="Ej: Bienvenida al mundo, te esperábamos con tanto amor." style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #CDBFAA; background: #FFFDF9; color: #3F352D; resize: vertical; border-radius: 4px;">{{message}}</textarea>
+        <textarea id="mensaje" maxlength="90" rows="3" value="{{message}}" onChange="{{onMessage}}" placeholder="Ej: Bienvenida al mundo, te esperábamos con tanto amor." style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #CDBFAA; background: #FFFDF9; color: #3F352D; resize: vertical; border-radius: 4px;"></textarea>
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 8px;">
