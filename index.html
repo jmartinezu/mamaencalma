@@ -42,7 +42,7 @@ a{color:#A63F63}a:hover{color:#7E2C49}
     <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
       <span style="align-self: flex-start; background: #E3F1EA; color: #2F5E4B; font-size: 14px; font-weight: 700; padding: 8px 14px; border-radius: 999px;">Seleccionado por una matrona</span>
       <h1 style="margin: 0; font-size: 52px; line-height: 1.1; font-weight: 800; letter-spacing: -1px;">Lo que una matrona le recomienda a sus pacientes, en una sola caja.</h1>
-      <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #5E4952;">Productos de lactancia y postparto probados uno a uno, con una guía clara y alguien que te responde cuando tienes dudas. Porque la maternidad se vive mejor acompañada.</p>
+      <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #5E4952;">Soy Macarena, mamá y matrona. Acompaño a mujeres en la gestación, el postparto y los primeros días con su recién nacido, y aquí reúno los productos que de verdad recomiendo, con una guía clara y alguien que te responde cuando tienes dudas.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px;">
         <a href="#kits" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px;">Ver los kits</a>
         <a href="#guia" style="background: #FFFFFF; color: #A63F63; text-decoration: none; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px; border: 2px solid #EBC9D4;">Descargar guía gratis</a>
@@ -118,7 +118,15 @@ a{color:#A63F63}a:hover{color:#7E2C49}
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
       <sc-for list="{{products}}" as="p" hint-placeholder-count="8">
         <article style="background: #FFFFFF; border-radius: 24px; border: 1px solid #F3DDE4; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
-          <div style="height: 190px; border-radius: 18px; background: {{p.tint}}; display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px; font-size: 13px; font-weight: 700; color: #5E4952;">[FOTO {{p.photo}}]</div>
+          <sc-if value="{{p.hasImg}}" hint-placeholder-val="{{true}}">
+            <div style="position: relative; height: 210px; border-radius: 18px; background: #FFFFFF; overflow: hidden; border: 1px solid #F3DDE4;">
+              <img src="{{p.img}}" alt="{{p.alt}}" loading="lazy" referrerpolicy="no-referrer" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+              <span style="position: absolute; left: 10px; bottom: 10px; background: #FFFFFF; color: #5E4952; font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 999px; border: 1px solid #F3DDE4;">Foto referencial</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{p.noImg}}" hint-placeholder-val="{{false}}">
+            <div style="height: 210px; border-radius: 18px; background: {{p.tint}}; display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px; font-size: 13px; font-weight: 700; color: #5E4952;">[FOTO {{p.photo}}]</div>
+          </sc-if>
           <span style="align-self: flex-start; font-size: 12px; font-weight: 800; color: #2F5E4B; background: #E3F1EA; padding: 4px 10px; border-radius: 999px;">{{p.cat}}</span>
           <h3 style="margin: 0; font-size: 18px; font-weight: 800; line-height: 1.3;">{{p.name}}</h3>
           <p style="margin: 0; font-size: 14px; color: #5E4952; line-height: 1.5;">“{{p.note}}”</p>
@@ -136,8 +144,8 @@ a{color:#A63F63}a:hover{color:#7E2C49}
       <div style="flex: 1 1 320px; min-width: 0; max-width: 420px; height: 420px; border-radius: 32px; background: #ECE6F6; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #5E4952;">[FOTO DE MACARENA]</div>
       <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
         <span style="align-self: flex-start; background: #FFFFFF; color: #A63F63; font-size: 14px; font-weight: 800; padding: 8px 14px; border-radius: 999px;">Conoce a tu matrona</span>
-        <h2 style="margin: 0; font-size: 36px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2;">Hola, soy Macarena, matrona.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E4952;">Todos los días acompaño a mamás en el parto y en sus primeros días con la guagua. Esta tienda nace de las preguntas que más escucho: qué comprar, qué sirve de verdad y qué no. Cada producto lo probé y lo recomendaría a una paciente.</p>
+        <h2 style="margin: 0; font-size: 36px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2;">Hola, soy Macarena: mamá y matrona.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E4952;">Como matrona, acompaño a mujeres durante la gestación, el parto, el postparto y los primeros días con su recién nacido. Y como mamá, sé lo que se siente llegar a la casa con una guagua y mil dudas. Esta tienda nace de las preguntas que más escucho: qué comprar, qué sirve de verdad y qué no. Cada producto lo probé y lo recomendaría a una paciente.</p>
         <p style="margin: 0; font-size: 15px; color: #5E4952;">[AÑOS DE EXPERIENCIA · Nº REGISTRO SUPERINTENDENCIA DE SALUD]</p>
         <a href="#guia" style="align-self: flex-start; background: #FFFFFF; color: #A63F63; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 24px; border-radius: 999px; border: 2px solid #EBC9D4;">Escríbeme por WhatsApp</a>
       </div>
@@ -177,7 +185,7 @@ a{color:#A63F63}a:hover{color:#7E2C49}
     <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
       <div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px;">
         <span style="font-size: 20px; font-weight: 800;">Mamá en Calma</span>
-        <span style="font-size: 15px; line-height: 1.6; color: #E4CFD8;">Lactancia y postparto, recomendado por una matrona. Despachos desde Talagante a todo Chile.</span>
+        <span style="font-size: 15px; line-height: 1.6; color: #E4CFD8;">Gestación, lactancia y postparto, recomendado por una matrona y mamá. Despachos desde Talagante a todo Chile.</span>
       </div>
       <nav aria-label="Ayuda" style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
         <span style="font-weight: 800;">Ayuda</span>
@@ -204,24 +212,24 @@ class Component extends DCLogic {
   renderVals() {
     const accent = this.props.accent ?? '#B0466B';
     const all = [
-      { name: 'Bolsas para leche materna 150 ml (30 u.)', cat: 'Lactancia', price: '$7.990', tint: '#FCEEF2', photo: 'BOLSAS', note: 'Para armar tu banco de leche sin derrames. Anota fecha y hora en cada una.' },
-      { name: 'Extractor eléctrico manos libres', cat: 'Lactancia', price: '$69.990', tint: '#ECE6F6', photo: 'EXTRACTOR', note: 'Para cuando vuelves al trabajo o necesitas extraer sin estar sentada.' },
-      { name: 'Extractor manual', cat: 'Lactancia', price: '$24.990', tint: '#E3F1EA', photo: 'EXTRACTOR MANUAL', note: 'Silencioso y simple. Ideal si extraes de vez en cuando.' },
-      { name: 'Faja postparto 3 en 1', cat: 'Postparto', price: '$24.990', tint: '#FBE7DC', photo: 'FAJA', note: 'Da soporte a tu abdomen y pelvis en las primeras semanas. Elige bien tu talla.' },
-      { name: 'Cojín de lactancia', cat: 'Lactancia', price: '$27.990', tint: '#FCEEF2', photo: 'COJÍN', note: 'Cuida tu espalda y ayuda a una buena postura al amamantar.' },
-      { name: 'Almohadillas de gel frío/calor', cat: 'Lactancia', price: '$8.990', tint: '#ECE6F6', photo: 'ALMOHADILLAS', note: 'Frío para la congestión, calor antes de amamantar.' },
-      { name: 'Protectores mamarios desechables', cat: 'Lactancia', price: '[PRECIO]', tint: '#E3F1EA', photo: 'PROTECTORES', note: 'Los primeros días se gotea más de lo que crees. Ten siempre a mano.' },
+      { name: 'Bolsas para leche materna 150 ml (30 u.)', cat: 'Lactancia', price: '$7.990', tint: '#FCEEF2', photo: 'BOLSAS', img: 'https://s.alicdn.com/@sc04/kf/H1ce04bb3d4b84d12859a5c414e3be128Q.png_480x480.jpg', alt: 'Bolsa para guardar leche materna', note: 'Para armar tu banco de leche sin derrames. Anota fecha y hora en cada una.' },
+      { name: 'Extractor eléctrico manos libres', cat: 'Lactancia', price: '$69.990', tint: '#ECE6F6', photo: 'EXTRACTOR', img: 'https://s.alicdn.com/@sc04/kf/Hdd45802dae474a408c9afda4be54ba3eG.jpg_480x480.jpg', alt: 'Extractor de leche eléctrico manos libres con estuche', note: 'Para cuando vuelves al trabajo o necesitas extraer sin estar sentada.' },
+      { name: 'Extractor manual', cat: 'Lactancia', price: '$24.990', tint: '#E3F1EA', photo: 'EXTRACTOR MANUAL', img: 'https://s.alicdn.com/@sc04/kf/Hc10e968a3b464b96aaf29f2cf83837fei.jpg_480x480.jpg', alt: 'Extractor de leche manual', note: 'Silencioso y simple. Ideal si extraes de vez en cuando.' },
+      { name: 'Cojín de lactancia', cat: 'Lactancia', price: '$27.990', tint: '#FCEEF2', photo: 'COJÍN', img: 'https://s.alicdn.com/@sc04/kf/H8995e79acc554272af1c7e1ee2ee4d4aQ.png_480x480.jpg', alt: 'Cojín de lactancia gris', note: 'Cuida tu espalda y ayuda a una buena postura al amamantar.' },
+      { name: 'Almohadillas de gel frío/calor', cat: 'Lactancia', price: '$8.990', tint: '#ECE6F6', photo: 'ALMOHADILLAS DE GEL', note: 'Frío para la congestión, calor antes de amamantar.' },
+      { name: 'Protectores mamarios desechables', cat: 'Lactancia', price: '[PRECIO]', tint: '#E3F1EA', photo: 'PROTECTORES', img: 'https://s.alicdn.com/@sc04/kf/Hfb2f41300b704d35aab7aec4065f920aA.jpg_480x480.jpg', alt: 'Caja de protectores mamarios desechables', note: 'Los primeros días se gotea más de lo que crees. Ten siempre a mano.' },
       { name: 'Guía digital de lactancia', cat: 'Guías', price: '$9.990', tint: '#FBE7DC', photo: 'GUÍA', note: 'Todo lo que explico en la consulta, para leer con calma en casa.' }
     ];
-    const cats = ['Todo', 'Lactancia', 'Postparto', 'Guías'];
-    const products = this.state.cat === 'Todo' ? all : all.filter((p) => p.cat === this.state.cat);
+    const cats = ['Todo', 'Lactancia', 'Guías'];
+    const filtered = this.state.cat === 'Todo' ? all : all.filter((p) => p.cat === this.state.cat);
+    const products = filtered.map((p) => ({ ...p, hasImg: !!p.img, noImg: !p.img }));
     const filters = cats.map((c) => {
       const on = this.state.cat === c;
       return { label: c, pressed: on ? 'true' : 'false', bg: on ? '#3B2A31' : '#FFFFFF', fg: on ? '#FFFFFF' : '#3B2A31', pick: () => this.setState({ cat: c }) };
     });
     const kits = [
       { name: 'Esencial', price: '$19.990', cuotas: 'o 3 cuotas de $6.663', tint: '#E3F1EA', border: '#F3DDE4', featured: false, btnBg: '#FFFFFF', btnFg: '#A63F63', desc: 'Lo básico para partir con la lactancia.', items: ['Bolsas para leche materna (30 u.)', 'Colector de silicona', 'Guía digital de lactancia'] },
-      { name: 'Completo', price: '$34.990', cuotas: 'o 3 cuotas de $11.663', tint: '#FCEEF2', border: accent, featured: true, btnBg: accent, btnFg: '#FFFFFF', desc: 'Lactancia y recuperación postparto, cubiertas.', items: ['Todo el kit Esencial', 'Protectores mamarios desechables', 'Faja postparto 3 en 1', 'Caja de regalo'] },
+      { name: 'Completo', price: '$34.990', cuotas: 'o 3 cuotas de $11.663', tint: '#FCEEF2', border: accent, featured: true, btnBg: accent, btnFg: '#FFFFFF', desc: 'Lactancia y recuperación postparto, cubiertas.', items: ['Todo el kit Esencial', 'Protectores mamarios desechables', 'Almohadillas de gel frío/calor', 'Caja de regalo'] },
       { name: 'Premium', price: '$89.990', cuotas: 'o 6 cuotas de $14.998', tint: '#ECE6F6', border: '#F3DDE4', featured: false, btnBg: '#FFFFFF', btnFg: '#A63F63', desc: 'Para volver al trabajo tranquila y acompañada.', items: ['Todo el kit Completo', 'Extractor eléctrico manos libres', 'Sesión de asesoría por videollamada'] }
     ];
     const benefits = [
