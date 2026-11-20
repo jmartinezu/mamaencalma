@@ -11,242 +11,231 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap">
 <style>
-body{margin:0;background:#F7F2EA}
-a{color:#6B4F38}a:hover{color:#4A3626}
+body{margin:0;background:#FFF8FA}
+a{color:#A63F63}a:hover{color:#7E2C49}
 </style>
 </helmet>
-<div style="font-family: 'Nunito Sans', system-ui, sans-serif; color: #3F352D; background: #F7F2EA; width: 100%; min-height: 100%;">
+<div style="font-family: Nunito, system-ui, sans-serif; color: #3B2A31; background: #FFF8FA; width: 100%; min-height: 100%;">
 
-  <div style="background: #3F352D; color: #F7F2EA; font-size: 13px; font-weight: 600; letter-spacing: 0.4px; text-align: center; padding: 10px 16px;">Envío a todo Chile · Paga en cuotas · Asesoría de matrona por WhatsApp incluida</div>
+  <div style="background: {{accent}}; color: #FFFFFF; font-size: 14px; font-weight: 700; text-align: center; padding: 10px 16px;">Envío a todo Chile · Paga en cuotas · Asesoría de matrona por WhatsApp incluida</div>
 
-  <header style="max-width: 1200px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #E6DCCD;">
-    <a href="#inicio" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #3F352D;">
-      <svg width="34" height="34" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17" stroke="#8A6A4F" stroke-width="1.2"></circle><path d="M18 25c-4.6-3.2-7.4-5.8-7.4-8.8A4 4 0 0 1 18 14a4 4 0 0 1 7.4 2.2c0 3-2.8 5.6-7.4 8.8z" stroke="#8A6A4F" stroke-width="1.4" stroke-linejoin="round"></path></svg>
-      <span style="font-family: Lora, Georgia, serif; font-size: 24px; font-weight: 500;">Mamá en Calma</span>
+  <header style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+    <a href="#inicio" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #3B2A31;">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17" fill="#F7D9E2"></circle><path d="M18 26c-5-3.5-8-6.3-8-9.6A4.3 4.3 0 0 1 18 14a4.3 4.3 0 0 1 8 2.4c0 3.3-3 6.1-8 9.6z" stroke="#A63F63" stroke-width="2" stroke-linejoin="round"></path></svg>
+      <span style="font-size: 22px; font-weight: 800; letter-spacing: -0.3px;">Mamá en Calma</span>
     </a>
-    <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; font-weight: 600;">
-      <a href="#kits" style="text-decoration: none; color: #3F352D;">Kits</a>
-      <a href="personalizar.html" style="text-decoration: none; color: #3F352D;">Personaliza tu regalo</a>
-      <a href="#productos" style="text-decoration: none; color: #3F352D;">Productos</a>
-      <a href="#tarjetas" style="text-decoration: none; color: #3F352D;">Tarjetas educativas</a>
-      <a href="#matrona" style="text-decoration: none; color: #3F352D;">Tu matrona</a>
+    <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 16px; font-weight: 600;">
+      <a href="#kits" style="text-decoration: none; color: #3B2A31;">Kits</a>
+      <a href="#productos" style="text-decoration: none; color: #3B2A31;">Productos</a>
+      <a href="#matrona" style="text-decoration: none; color: #3B2A31;">Tu matrona</a>
+      <a href="#guia" style="text-decoration: none; color: #3B2A31;">Guía gratis</a>
     </nav>
     <div style="display: flex; gap: 10px;">
-      <button type="button" aria-label="Buscar" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E0D4C3; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3F352D" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></button>
-      <button type="button" aria-label="Carro de compras" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E0D4C3; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3F352D" stroke-width="1.6" aria-hidden="true"><path d="M5 7h14l-1.5 11h-11z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg></button>
+      <button type="button" aria-label="Buscar" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #EBC9D4; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2A31" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></button>
+      <button type="button" aria-label="Carro de compras" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #EBC9D4; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2A31" stroke-width="2" aria-hidden="true"><path d="M5 7h14l-1.5 11h-11z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg></button>
     </div>
   </header>
 
-  <section id="inicio" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
-    <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 22px;">
-      <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #6E6156;">Seleccionado por una matrona</span>
-      <h1 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 54px; line-height: 1.12; font-weight: 500; letter-spacing: -0.5px;">Un abrazo para quien también cuida.</h1>
-      <p style="margin: 0; font-size: 19px; line-height: 1.65; color: #6E6156;">Kits de lactancia, postparto y recién nacido, probados uno a uno por una matrona. Con el nombre de la mamá o de la guagua, para regalar o regalarte.</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px;">
-        <a href="personalizar.html" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px;">Personalizar un kit</a>
-        <a href="#kits" style="background: transparent; color: #3F352D; text-decoration: none; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; border: 1px solid #CDBFAA;">Ver los kits</a>
+  <section id="inicio" style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+    <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+      <span style="align-self: flex-start; background: #E3F1EA; color: #2F5E4B; font-size: 14px; font-weight: 700; padding: 8px 14px; border-radius: 999px;">Seleccionado por una matrona</span>
+      <h1 style="margin: 0; font-size: 52px; line-height: 1.1; font-weight: 800; letter-spacing: -1px;">Lo que una matrona le recomienda a sus pacientes, en una sola caja.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #5E4952;">Productos de lactancia y postparto probados uno a uno, con una guía clara y alguien que te responde cuando tienes dudas. Porque la maternidad se vive mejor acompañada.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px;">
+        <a href="#kits" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px;">Ver los kits</a>
+        <a href="#guia" style="background: #FFFFFF; color: #A63F63; text-decoration: none; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px; border: 2px solid #EBC9D4;">Descargar guía gratis</a>
       </div>
     </div>
-    <div style="flex: 1 1 440px; min-width: 0; height: 460px; border-radius: 6px; background: #E8DCCB; display: flex; align-items: center; justify-content: center; position: relative;">
-      <div style="background: #FFFDF9; border: 1px solid #DCCDB8; padding: 32px 40px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; width: 300px;">
-        <span style="font-family: Lora, Georgia, serif; font-size: 26px; color: #3F352D;">Mamá en Calma</span>
-        <span style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #6E6156;">Kit Recién Nacido</span>
-        <span style="width: 40px; height: 1px; background: #CDBFAA; margin: 8px 0;"></span>
-        <span style="font-family: Lora, Georgia, serif; font-style: italic; font-size: 22px; color: {{accent}};">Para Joaquina</span>
-        <span style="font-size: 13px; color: #6E6156; padding-top: 16px;">[FOTO DEL KIT ABIERTO]</span>
+    <div style="flex: 1 1 420px; min-width: 0; height: 440px; border-radius: 32px; background: #F7D9E2; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+      <div style="position: absolute; width: 260px; height: 260px; border-radius: 50%; background: #FBE7DC; top: -40px; right: -40px;"></div>
+      <div style="position: absolute; width: 200px; height: 200px; border-radius: 50%; background: #ECE6F6; bottom: -50px; left: -30px;"></div>
+      <div style="position: relative; background: #FFFFFF; border-radius: 24px; padding: 28px 32px; display: flex; flex-direction: column; align-items: center; gap: 12px; max-width: 280px; text-align: center;">
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#A63F63" stroke-width="1.5" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"></rect><path d="M3 12h18"></path><path d="M12 8v12"></path><path d="M12 8c-1.5-3-5-3-5-1s3 1 5 1c2 0 5 1 5-1s-3.5-2-5 1z"></path></svg>
+        <span style="font-size: 15px; font-weight: 700; color: #5E4952;">[FOTO DEL KIT ABIERTO]</span>
       </div>
     </div>
   </section>
 
-  <section aria-label="Beneficios" style="border-top: 1px solid #E6DCCD; border-bottom: 1px solid #E6DCCD;">
+  <section aria-label="Beneficios" style="background: #FFFFFF; border-top: 1px solid #F3DDE4; border-bottom: 1px solid #F3DDE4;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
       <sc-for list="{{benefits}}" as="b" hint-placeholder-count="4">
-        <div style="display: flex; flex-direction: column; gap: 4px;">
-          <span style="font-weight: 800; font-size: 15px;">{{b.title}}</span>
-          <span style="font-size: 14px; color: #6E6156;">{{b.text}}</span>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="width: 48px; height: 48px; flex-shrink: 0; border-radius: 16px; background: {{b.tint}}; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; color: #3B2A31;">{{b.n}}</div>
+          <div style="display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-weight: 800; font-size: 16px;">{{b.title}}</span>
+            <span style="font-size: 14px; color: #5E4952;">{{b.text}}</span>
+          </div>
         </div>
       </sc-for>
     </div>
   </section>
 
-  <section id="kits" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; gap: 36px;">
+  <section id="kits" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 32px;">
     <div style="display: flex; flex-direction: column; gap: 10px; text-align: center; align-items: center;">
-      <h2 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 40px; font-weight: 500;">Nuestros kits</h2>
-      <p style="margin: 0; font-size: 17px; color: #6E6156; max-width: 620px;">Todos se pueden personalizar con un nombre y un mensaje. Incluyen tarjetas educativas con código QR.</p>
+      <h2 style="margin: 0; font-size: 38px; font-weight: 800; letter-spacing: -0.5px;">Elige tu kit</h2>
+      <p style="margin: 0; font-size: 18px; color: #5E4952; max-width: 640px;">Tres niveles, todos armados por nuestra matrona. Ideales para ti o para regalar en un baby shower.</p>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-      <sc-for list="{{kits}}" as="k" hint-placeholder-count="4">
-        <article style="background: #FFFDF9; border: 1px solid #E6DCCD; padding: 22px; display: flex; flex-direction: column; gap: 16px;">
-          <div style="height: 180px; background: {{k.tint}}; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6E6156;">[FOTO KIT {{k.name}}]</div>
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #6E6156;">{{k.tag}}</span>
-            <h3 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 24px; font-weight: 500;">Kit {{k.name}}</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+      <sc-for list="{{kits}}" as="k" hint-placeholder-count="3">
+        <article style="background: #FFFFFF; border-radius: 28px; border: 2px solid {{k.border}}; padding: 28px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="height: 180px; border-radius: 20px; background: {{k.tint}}; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: #5E4952;">[FOTO KIT {{k.name}}]</div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+            <h3 style="margin: 0; font-size: 26px; font-weight: 800;">Kit {{k.name}}</h3>
+            <sc-if value="{{k.featured}}" hint-placeholder-val="{{false}}">
+              <span style="background: {{accent}}; color: #FFFFFF; font-size: 13px; font-weight: 800; padding: 6px 12px; border-radius: 999px;">Más elegido</span>
+            </sc-if>
           </div>
-          <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.45; color: #4F443A;">
-            <sc-for list="{{k.items}}" as="it" hint-placeholder-count="4">
+          <p style="margin: 0; font-size: 16px; color: #5E4952; line-height: 1.5;">{{k.desc}}</p>
+          <ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.4;">
+            <sc-for list="{{k.items}}" as="it" hint-placeholder-count="3">
               <li>{{it}}</li>
             </sc-for>
           </ul>
-          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 2px; padding-top: 8px; border-top: 1px solid #EFE6D9;">
-            <span style="font-size: 24px; font-weight: 800;">{{k.price}}</span>
-            <span style="font-size: 13px; color: #6E6156;">Personalización incluida</span>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 4px; padding-top: 8px;">
+            <span style="font-size: 32px; font-weight: 800;">{{k.price}}</span>
+            <span style="font-size: 14px; color: #5E4952;">{{k.cuotas}}</span>
           </div>
-          <a href="personalizar.html" style="text-align: center; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 13px 18px; border-radius: 999px;">Personalizar</a>
+          <button type="button" style="background: {{k.btnBg}}; color: {{k.btnFg}}; border: 2px solid {{accent}}; font-family: inherit; font-weight: 800; font-size: 16px; padding: 14px 20px; border-radius: 999px; cursor: pointer;">Agregar al carro</button>
         </article>
       </sc-for>
-    </div>
-  </section>
-
-  <section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px;">
-    <div style="background: #EDE4D6; padding: 48px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
-        <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #6E6156;">Hecho para ella</span>
-        <h2 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 36px; font-weight: 500; line-height: 1.2;">Escribe su nombre, elige la letra y el color.</h2>
-        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5C5047;">Lo imprimimos en la caja y en una tarjeta con tu mensaje. Para la mamá, para la guagua o para las dos.</p>
-        <a href="personalizar.html" style="align-self: flex-start; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 16px; padding: 15px 26px; border-radius: 999px;">Probar ahora</a>
-      </div>
-      <div style="flex: 1 1 360px; min-width: 0; display: flex; gap: 16px; justify-content: center;">
-        <div style="background: #FFFDF9; border: 1px solid #DCCDB8; width: 200px; height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;">
-          <span style="font-family: Lora, Georgia, serif; font-style: italic; font-size: 26px; color: #8A6A4F;">Macarena</span>
-          <span style="font-size: 12px; color: #6E6156;">Con calma, mamá.</span>
-        </div>
-        <div style="background: #FFFDF9; border: 1px solid #DCCDB8; width: 200px; height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;">
-          <span style="font-family: 'Nunito Sans', sans-serif; font-weight: 800; letter-spacing: 3px; font-size: 20px; color: #5E6B55;">JOAQUINA</span>
-          <span style="font-size: 12px; color: #6E6156;">Bienvenida al mundo</span>
-        </div>
-      </div>
     </div>
   </section>
 
   <section id="productos" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 28px;">
     <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px;">
       <div style="display: flex; flex-direction: column; gap: 8px;">
-        <h2 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 34px; font-weight: 500;">Productos sueltos</h2>
-        <p style="margin: 0; font-size: 16px; color: #6E6156;">Cada uno con su nota de la matrona.</p>
+        <h2 style="margin: 0; font-size: 34px; font-weight: 800; letter-spacing: -0.5px;">Productos sueltos</h2>
+        <p style="margin: 0; font-size: 17px; color: #5E4952;">Cada uno con su nota de la matrona: para qué sirve y cuándo usarlo.</p>
       </div>
       <div role="group" aria-label="Filtrar por categoría" style="display: flex; flex-wrap: wrap; gap: 8px;">
-        <sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
-          <button type="button" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="background: {{f.bg}}; color: {{f.fg}}; border: 1px solid #CDBFAA; font-family: inherit; font-weight: 700; font-size: 14px; padding: 10px 18px; border-radius: 999px; cursor: pointer; min-height: 44px;">{{f.label}}</button>
+        <sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+          <button type="button" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="background: {{f.bg}}; color: {{f.fg}}; border: 1px solid #EBC9D4; font-family: inherit; font-weight: 700; font-size: 15px; padding: 10px 18px; border-radius: 999px; cursor: pointer; min-height: 44px;">{{f.label}}</button>
         </sc-for>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
       <sc-for list="{{products}}" as="p" hint-placeholder-count="8">
-        <article style="background: #FFFDF9; border: 1px solid #E6DCCD; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
-          <div style="height: 180px; background: {{p.tint}}; display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px; font-size: 12px; color: #6E6156;">[FOTO {{p.photo}}]</div>
-          <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #6E6156;">{{p.cat}}</span>
-          <h3 style="margin: 0; font-size: 16px; font-weight: 800; line-height: 1.3;">{{p.name}}</h3>
-          <p style="margin: 0; font-size: 14px; color: #6E6156; line-height: 1.5; font-family: Lora, Georgia, serif; font-style: italic;">“{{p.note}}”</p>
+        <article style="background: #FFFFFF; border-radius: 24px; border: 1px solid #F3DDE4; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+          <div style="height: 190px; border-radius: 18px; background: {{p.tint}}; display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px; font-size: 13px; font-weight: 700; color: #5E4952;">[FOTO {{p.photo}}]</div>
+          <span style="align-self: flex-start; font-size: 12px; font-weight: 800; color: #2F5E4B; background: #E3F1EA; padding: 4px 10px; border-radius: 999px;">{{p.cat}}</span>
+          <h3 style="margin: 0; font-size: 18px; font-weight: 800; line-height: 1.3;">{{p.name}}</h3>
+          <p style="margin: 0; font-size: 14px; color: #5E4952; line-height: 1.5;">“{{p.note}}”</p>
           <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 4px;">
-            <span style="font-size: 18px; font-weight: 800;">{{p.price}}</span>
-            <button type="button" aria-label="Agregar {{p.name}} al carro" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #CDBFAA; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3F352D" stroke-width="1.8" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+            <span style="font-size: 20px; font-weight: 800;">{{p.price}}</span>
+            <button type="button" aria-label="Agregar {{p.name}} al carro" style="width: 44px; height: 44px; border-radius: 22px; border: none; background: {{accent}}; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
           </div>
         </article>
       </sc-for>
     </div>
   </section>
 
-  <section id="tarjetas" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 32px;">
-    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 680px;">
-      <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #6E6156;">Viene en cada kit</span>
-      <h2 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 36px; font-weight: 500;">Tarjetas educativas con QR</h2>
-      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #6E6156;">Tamaño postal, para dejar en el velador. Escaneas el código y ves la ilustración con la explicación de la matrona.</p>
+  <section id="matrona" style="background: #FCEEF2;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+      <div style="flex: 1 1 320px; min-width: 0; max-width: 420px; height: 420px; border-radius: 32px; background: #ECE6F6; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #5E4952;">[FOTO DE MACARENA]</div>
+      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+        <span style="align-self: flex-start; background: #FFFFFF; color: #A63F63; font-size: 14px; font-weight: 800; padding: 8px 14px; border-radius: 999px;">Conoce a tu matrona</span>
+        <h2 style="margin: 0; font-size: 36px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2;">Hola, soy Macarena, matrona.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E4952;">Todos los días acompaño a mamás en el parto y en sus primeros días con la guagua. Esta tienda nace de las preguntas que más escucho: qué comprar, qué sirve de verdad y qué no. Cada producto lo probé y lo recomendaría a una paciente.</p>
+        <p style="margin: 0; font-size: 15px; color: #5E4952;">[AÑOS DE EXPERIENCIA · Nº REGISTRO SUPERINTENDENCIA DE SALUD]</p>
+        <a href="#guia" style="align-self: flex-start; background: #FFFFFF; color: #A63F63; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 24px; border-radius: 999px; border: 2px solid #EBC9D4;">Escríbeme por WhatsApp</a>
+      </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
-      <sc-for list="{{cards}}" as="c" hint-placeholder-count="4">
-        <div style="background: #FFFDF9; border: 1px solid #DCCDB8; padding: 22px; display: flex; flex-direction: column; gap: 14px; min-height: 280px;">
-          <span style="font-size: 12px; color: #6E6156;">Tarjeta {{c.n}}</span>
-          <h3 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 21px; font-weight: 500; line-height: 1.25;">{{c.title}}</h3>
-          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5C5047;">{{c.text}}</p>
-          <div style="margin-top: auto; display: flex; align-items: center; gap: 12px;">
-            <svg width="56" height="56" viewBox="0 0 28 28" role="img" aria-label="Código QR de ejemplo"><rect width="28" height="28" fill="#FFFDF9"></rect><path d="M2 2h8v8H2zM18 2h8v8h-8zM2 18h8v8H2z" fill="none" stroke="#3F352D" stroke-width="2"></path><path d="M5 5h2v2H5zM21 5h2v2h-2zM5 21h2v2H5zM13 3h2v4h-2zM12 12h4v4h-4zM18 13h3v2h-3zM13 19h2v6h-2zM19 19h6v2h-6zM23 23h2v2h-2z" fill="#3F352D"></path></svg>
-            <span style="font-size: 13px; color: #6E6156;">Escanea para ver la ilustración</span>
-          </div>
+  </section>
+
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 32px;">
+    <h2 style="margin: 0; font-size: 34px; font-weight: 800; text-align: center; letter-spacing: -0.5px;">Cómo funciona</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+      <sc-for list="{{steps}}" as="s" hint-placeholder-count="3">
+        <div style="background: #FFFFFF; border-radius: 24px; border: 1px solid #F3DDE4; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+          <span style="width: 44px; height: 44px; border-radius: 22px; background: {{s.tint}}; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px;">{{s.n}}</span>
+          <h3 style="margin: 0; font-size: 20px; font-weight: 800;">{{s.title}}</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #5E4952;">{{s.text}}</p>
         </div>
       </sc-for>
     </div>
   </section>
 
-  <section id="matrona" style="background: #EDE4D6;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
-      <div style="flex: 1 1 320px; min-width: 0; max-width: 400px; height: 420px; background: #DCCDB8; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #5C5047;">[FOTO DE MACARENA]</div>
-      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
-        <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #5C5047;">Conoce a tu matrona</span>
-        <h2 style="margin: 0; font-family: Lora, Georgia, serif; font-size: 38px; font-weight: 500; line-height: 1.2;">Hola, soy Macarena, matrona.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #5C5047;">Acompaño a mamás en el parto y en sus primeros días con la guagua. Esta tienda nace de las preguntas que más escucho: qué comprar, qué sirve de verdad y qué no. Cada producto lo probé y lo recomendaría a una paciente.</p>
-        <p style="margin: 0; font-size: 14px; color: #5C5047;">[AÑOS DE EXPERIENCIA · Nº REGISTRO SUPERINTENDENCIA DE SALUD]</p>
-        <a href="#inicio" style="align-self: flex-start; background: transparent; color: #3F352D; text-decoration: none; font-weight: 700; font-size: 15px; padding: 14px 24px; border-radius: 999px; border: 1px solid #A8977F;">Escríbeme por WhatsApp</a>
+  <section id="guia" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 80px;">
+    <div style="background: #E3F1EA; border-radius: 32px; padding: 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between;">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px;">
+        <h2 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.5px;">Guía gratis: qué llevar al hospital</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #3E5A4E;">La lista que Macarena entrega a sus pacientes, en PDF. Te la enviamos por WhatsApp o correo.</p>
       </div>
+      <form style="flex: 1 1 380px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end;">
+        <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px;">
+          <label for="contacto" style="font-size: 14px; font-weight: 700; color: #2F5E4B;">WhatsApp o correo</label>
+          <input id="contacto" type="text" placeholder="+56 9 ..." style="font-family: inherit; font-size: 16px; padding: 14px 16px; border-radius: 14px; border: 1px solid #B9D8C9; background: #FFFFFF; min-height: 48px; box-sizing: border-box;">
+        </div>
+        <button type="button" style="background: {{accent}}; color: #FFFFFF; border: none; font-family: inherit; font-weight: 800; font-size: 16px; padding: 14px 24px; border-radius: 999px; cursor: pointer; min-height: 48px;">Quiero la guía</button>
+      </form>
     </div>
   </section>
 
-  <footer style="background: #3F352D; color: #F2EADF;">
+  <footer style="background: #3B2A31; color: #F6E9EE;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
       <div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px;">
-        <span style="font-family: Lora, Georgia, serif; font-size: 22px;">Mamá en Calma</span>
-        <span style="font-size: 14px; line-height: 1.6; color: #D9CDBD;">Un abrazo para quien también cuida. Despachos a todo Chile.</span>
+        <span style="font-size: 20px; font-weight: 800;">Mamá en Calma</span>
+        <span style="font-size: 15px; line-height: 1.6; color: #E4CFD8;">Lactancia y postparto, recomendado por una matrona. Despachos desde Talagante a todo Chile.</span>
       </div>
-      <nav aria-label="Ayuda" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+      <nav aria-label="Ayuda" style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
         <span style="font-weight: 800;">Ayuda</span>
-        <a href="#inicio" style="color: #F2EADF;">Envíos y despachos</a>
-        <a href="#inicio" style="color: #F2EADF;">Cambios y devoluciones</a>
-        <a href="#inicio" style="color: #F2EADF;">Preguntas frecuentes</a>
+        <a href="#guia" style="color: #F6E9EE;">Envíos y despachos</a>
+        <a href="#guia" style="color: #F6E9EE;">Cambios y devoluciones</a>
+        <a href="#guia" style="color: #F6E9EE;">Preguntas frecuentes</a>
       </nav>
-      <nav aria-label="Redes" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+      <nav aria-label="Redes" style="display: flex; flex-direction: column; gap: 10px; font-size: 15px;">
         <span style="font-weight: 800;">Síguenos</span>
-        <a href="#inicio" style="color: #F2EADF;">Instagram</a>
-        <a href="#inicio" style="color: #F2EADF;">TikTok</a>
-        <a href="#inicio" style="color: #F2EADF;">WhatsApp</a>
+        <a href="#inicio" style="color: #F6E9EE;">Instagram</a>
+        <a href="#inicio" style="color: #F6E9EE;">TikTok</a>
+        <a href="#inicio" style="color: #F6E9EE;">WhatsApp</a>
       </nav>
     </div>
   </footer>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#8A6A4F","options":["#8A6A4F","#5E6B55","#6B5A4E","#3F352D"]},"$preview":{"width":1440,"height":4000}}'>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#B0466B","options":["#B0466B","#9C4A8B","#2F7A68","#B5563A"]},"$preview":{"width":1440,"height":3400}}'>
 class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { cat: 'Todo' };
   }
   renderVals() {
-    const accent = this.props.accent ?? '#8A6A4F';
+    const accent = this.props.accent ?? '#B0466B';
     const all = [
-      { name: 'Bolsas para leche materna 150 ml (30 u.)', cat: 'Lactancia', price: '$7.990', tint: '#EDE4D6', photo: 'BOLSAS', note: 'Para armar tu banco de leche. Anota fecha y hora en cada una.' },
-      { name: 'Extractor eléctrico manos libres', cat: 'Lactancia', price: '$69.990', tint: '#E8DCCB', photo: 'EXTRACTOR', note: 'Para cuando vuelves al trabajo o necesitas extraer sin estar sentada.' },
-      { name: 'Cojín de lactancia', cat: 'Lactancia', price: '$27.990', tint: '#EFE8DD', photo: 'COJÍN', note: 'Cuida tu espalda y ayuda a una buena postura al amamantar.' },
-      { name: 'Faja postparto 3 en 1', cat: 'Postparto', price: '$24.990', tint: '#E3E6DB', photo: 'FAJA', note: 'Soporte para abdomen y pelvis en las primeras semanas.' },
-      { name: 'Almohadillas de gel frío/calor', cat: 'Postparto', price: '$8.990', tint: '#EDE4D6', photo: 'ALMOHADILLAS', note: 'Frío para la congestión, calor antes de amamantar.' },
-      { name: 'Muselinas de algodón (2 u.)', cat: 'Recién nacido', price: '[PRECIO]', tint: '#EFE8DD', photo: 'MUSELINAS', note: 'Sirven de manta, paño y cambiador. Las vas a usar todos los días.' },
-      { name: 'Termómetro digital', cat: 'Recién nacido', price: '[PRECIO]', tint: '#E3E6DB', photo: 'TERMÓMETRO', note: 'Axilar, de lectura rápida. Sobre 37,5 °C, consulta.' },
-      { name: 'Body de algodón', cat: 'Recién nacido', price: '[PRECIO]', tint: '#E8DCCB', photo: 'BODY', note: 'Algodón suave y broches abajo para cambiar fácil.' }
+      { name: 'Bolsas para leche materna 150 ml (30 u.)', cat: 'Lactancia', price: '$7.990', tint: '#FCEEF2', photo: 'BOLSAS', note: 'Para armar tu banco de leche sin derrames. Anota fecha y hora en cada una.' },
+      { name: 'Extractor eléctrico manos libres', cat: 'Lactancia', price: '$69.990', tint: '#ECE6F6', photo: 'EXTRACTOR', note: 'Para cuando vuelves al trabajo o necesitas extraer sin estar sentada.' },
+      { name: 'Extractor manual', cat: 'Lactancia', price: '$24.990', tint: '#E3F1EA', photo: 'EXTRACTOR MANUAL', note: 'Silencioso y simple. Ideal si extraes de vez en cuando.' },
+      { name: 'Faja postparto 3 en 1', cat: 'Postparto', price: '$24.990', tint: '#FBE7DC', photo: 'FAJA', note: 'Da soporte a tu abdomen y pelvis en las primeras semanas. Elige bien tu talla.' },
+      { name: 'Cojín de lactancia', cat: 'Lactancia', price: '$27.990', tint: '#FCEEF2', photo: 'COJÍN', note: 'Cuida tu espalda y ayuda a una buena postura al amamantar.' },
+      { name: 'Almohadillas de gel frío/calor', cat: 'Lactancia', price: '$8.990', tint: '#ECE6F6', photo: 'ALMOHADILLAS', note: 'Frío para la congestión, calor antes de amamantar.' },
+      { name: 'Protectores mamarios desechables', cat: 'Lactancia', price: '[PRECIO]', tint: '#E3F1EA', photo: 'PROTECTORES', note: 'Los primeros días se gotea más de lo que crees. Ten siempre a mano.' },
+      { name: 'Guía digital de lactancia', cat: 'Guías', price: '$9.990', tint: '#FBE7DC', photo: 'GUÍA', note: 'Todo lo que explico en la consulta, para leer con calma en casa.' }
     ];
-    const cats = ['Todo', 'Lactancia', 'Postparto', 'Recién nacido'];
+    const cats = ['Todo', 'Lactancia', 'Postparto', 'Guías'];
     const products = this.state.cat === 'Todo' ? all : all.filter((p) => p.cat === this.state.cat);
     const filters = cats.map((c) => {
       const on = this.state.cat === c;
-      return { label: c, pressed: on ? 'true' : 'false', bg: on ? '#3F352D' : 'transparent', fg: on ? '#F7F2EA' : '#3F352D', pick: () => this.setState({ cat: c }) };
+      return { label: c, pressed: on ? 'true' : 'false', bg: on ? '#3B2A31' : '#FFFFFF', fg: on ? '#FFFFFF' : '#3B2A31', pick: () => this.setState({ cat: c }) };
     });
     const kits = [
-      { name: 'Recién Nacido', tag: 'Para la guagua', price: '[PRECIO]', tint: '#EFE8DD', items: ['Muselinas de algodón (2)', 'Paños suaves (3)', 'Cepillo de cerdas suaves y lima', 'Termómetro digital', 'Body de algodón', 'Guía de primeros cuidados'] },
-      { name: 'Lactancia', tag: 'Para la mamá', price: '$19.990', tint: '#EDE4D6', items: ['Bolsas para leche materna (30)', 'Colector de silicona', 'Almohadillas de gel', 'Tarjetas de lactancia con QR'] },
-      { name: 'Postparto', tag: 'Para la mamá', price: '$34.990', tint: '#E3E6DB', items: ['Todo el kit Lactancia', 'Faja postparto 3 en 1', 'Protectores mamarios', 'Tarjetas de recuperación con QR'] },
-      { name: 'Premium', tag: 'Mamá y guagua', price: '$89.990', tint: '#E8DCCB', items: ['Kit Postparto completo', 'Extractor manos libres', 'Asesoría por videollamada', 'Caja de regalo grabada'] }
+      { name: 'Esencial', price: '$19.990', cuotas: 'o 3 cuotas de $6.663', tint: '#E3F1EA', border: '#F3DDE4', featured: false, btnBg: '#FFFFFF', btnFg: '#A63F63', desc: 'Lo básico para partir con la lactancia.', items: ['Bolsas para leche materna (30 u.)', 'Colector de silicona', 'Guía digital de lactancia'] },
+      { name: 'Completo', price: '$34.990', cuotas: 'o 3 cuotas de $11.663', tint: '#FCEEF2', border: accent, featured: true, btnBg: accent, btnFg: '#FFFFFF', desc: 'Lactancia y recuperación postparto, cubiertas.', items: ['Todo el kit Esencial', 'Protectores mamarios desechables', 'Faja postparto 3 en 1', 'Caja de regalo'] },
+      { name: 'Premium', price: '$89.990', cuotas: 'o 6 cuotas de $14.998', tint: '#ECE6F6', border: '#F3DDE4', featured: false, btnBg: '#FFFFFF', btnFg: '#A63F63', desc: 'Para volver al trabajo tranquila y acompañada.', items: ['Todo el kit Completo', 'Extractor eléctrico manos libres', 'Sesión de asesoría por videollamada'] }
     ];
     const benefits = [
-      { title: 'Elegido por matrona', text: 'Cada producto, probado.' },
-      { title: 'Personalizado', text: 'Con su nombre y tu mensaje.' },
-      { title: 'Paga en cuotas', text: 'Con tarjeta de crédito.' },
-      { title: 'Envío a todo Chile', text: 'Despacho en días hábiles.' }
+      { n: '1', tint: '#FCEEF2', title: 'Elegido por matrona', text: 'Cada producto, probado.' },
+      { n: '2', tint: '#E3F1EA', title: 'Dudas por WhatsApp', text: 'Te respondemos tras tu compra.' },
+      { n: '3', tint: '#ECE6F6', title: 'Paga en cuotas', text: 'Con tarjeta de crédito.' },
+      { n: '4', tint: '#FBE7DC', title: 'Envío a todo Chile', text: 'Despacho en días hábiles.' }
     ];
-    const cards = [
-      { n: '1', title: 'El agarre correcto', text: 'Cómo saber si tu guagua se acopló bien al pecho.' },
-      { n: '2', title: 'Señales de hambre', text: 'Lo que tu guagua te dice antes de llorar.' },
-      { n: '3', title: 'Cuidado del cordón', text: 'Limpieza diaria y cuándo consultar.' },
-      { n: '4', title: 'Tu recuperación', text: 'Qué es normal en los primeros 40 días.' }
+    const steps = [
+      { n: '1', tint: '#FCEEF2', title: 'Elige tu kit', text: 'O arma el tuyo con productos sueltos. Si no sabes cuál, escríbenos.' },
+      { n: '2', tint: '#E3F1EA', title: 'Te llega a la casa', text: 'En una caja lista para usar o regalar, con tu guía impresa.' },
+      { n: '3', tint: '#ECE6F6', title: 'Te acompañamos', text: 'Dudas de uso por WhatsApp, respondidas por una matrona.' }
     ];
-    return { accent, products, filters, kits, benefits, cards };
+    return { accent, products, filters, kits, benefits, steps };
   }
 }
 </script>
